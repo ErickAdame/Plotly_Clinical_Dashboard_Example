@@ -67,6 +67,8 @@ function buildMetadata(sample){
         for(key in result) {
             PANEL.append("h6").text(`${key.toUpperCase()}: ${result[key]}`)    
         }
+
+        buildGauge(result.wfreq);
     })
 }
 
